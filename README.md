@@ -11,21 +11,21 @@ _An anagram is a word that you can rearrange the letters and it becomes a new wo
 
 ## Setup/Installation Requirements
 
-* In terminal run the following commands to setup the database:
+* In terminal run the following commands:
 
 1. _Fork and clone this repository from_ [gitHub](https://github.com/michaela-davis/php_anagram.git).
-2. Navigate to the root directory of the project in which ever CLI shell you are using and run the command: `composer install`.
-3. Create a local server in the /web directory within the project folder using the command: `php -S localhost:8000` (assuming you are using a mac).
-4. Open the directory http://localhost:8000/ in any standard web browser.
+2. Ensure [composer](https://getcomposer.org/) is installed on your computer.
+3. Navigate to the root directory of the project in which ever CLI shell you are using and run the command: `composer install`.
+4. Create a local server in the /web directory within the project folder using the command: `php -S localhost:8000` (assuming you are using a mac - things are different on a pc).
+5. Open the directory http://localhost:8000/ in any standard web browser.
 
 ## Specifications
 
 |    *Behavior*   |    *Input*    |     *Output*    |
 |-----------------|---------------|-----------------|
-| It recognizes a word that has no anagrams  | "ham", "mat" | false, “This words do not have the same characters and therefore are not anagrams"|
-| It recognizes two words that are the same  | "ham", "ham" | false, “These are the same word. Please try again."|  
-| It recognizes a words that are anagrams of each other  | "delight", "lighted" | true, “This word has 1 anagram: lighted"|
-| It recognizes a word that has multiple anagrams  | "friend", "finder, redfin, refind" | true, “This word has 3 anagrams: finder, redfin, refind"|
+| It recognizes a word that has no anagrams  | "ham", "mat" | false |
+| It recognizes two words that are the same  | "ham", "ham" | true |  
+| It recognizes a words that are anagrams of each other  | "delight", "lighted" | true |
 
 
 ## Known Bugs
