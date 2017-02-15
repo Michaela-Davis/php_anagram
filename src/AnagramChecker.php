@@ -35,13 +35,10 @@
 
 
 
-        function checkAnagram($input_words)
+        function checkAnagram()
         {
-            $source_text = $_GET["source_text"];
-            $anagram_text = $_GET["anagram_text"];
-
-            if ($source_text == $anagram_text) {
-                return "These are the same word. Please try again.";
+            if ($this->source_text == $this->anagram_text) {
+                return true;
             }
 
         }

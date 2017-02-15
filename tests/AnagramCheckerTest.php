@@ -1,34 +1,36 @@
 <?php
 
-    require_once "src/AnagramChecker.php";
+    require_once __DIR__ . "/../src/AnagramChecker.php";
 
     class AnagramCheckerTest extends PHPUnit_Framework_TestCase
     {
 
-        function test_anagramCheck_differentCharacters()
+        function test_anagramChecker_differentCharacters()
         {
             //Arrange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "ham, mat";
+            $source_text = "ham";
+            $anagram_text = "mat";
+            $test_AnagramChecker = new AnagramChecker($source_text, $anagram_text);
 
             //Act
-            $result = $test_AnagramChecker->checkAnagram($input);
+            $result = $test_AnagramChecker->checkAnagram($source_text, $anagram_text);
 
             //Assert
             $this->assertEquals(false, $result);
         }
 
-        function test_anagramCheck_repeatedWord()
+        function test_anagramChecker_repeatedWord()
         {
             //Arrange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "ham, ham";
+            $source_text = "ham";
+            $anagram_text = "ham";
+            $test_AnagramChecker = new AnagramChecker($source_text, $anagram_text);
 
             //Act
-            $result = $test_AnagramChecker->checkAnagram($input);
+            $result = $test_AnagramChecker->checkAnagram($source_text, $anagram_text);
 
             //Assert
-            $this->assertEquals(false, $result);
+            $this->assertEquals(true, $result);
         }
 
         // function test_anagramCheck_repeated()
