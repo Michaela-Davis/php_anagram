@@ -16,6 +16,7 @@ _An anagram is a word that you can rearrange the letters and it becomes a new wo
 1. _Fork and clone this repository from_ [gitHub](https://github.com/michaela-davis/php_anagram.git).
 2. Ensure [composer](https://getcomposer.org/) is installed on your computer.
 3. Navigate to the root directory of the project in which ever CLI shell you are using and run the command: `composer install`.
+4. To run tests enter `composer test` in terminal.
 4. Create a local server in the /web directory within the project folder using the command: `php -S localhost:8000` (assuming you are using a mac - things are different on a pc).
 5. Open the directory http://localhost:8000/ in any standard web browser.
 
