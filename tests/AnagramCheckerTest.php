@@ -33,18 +33,21 @@
             $this->assertEquals(true, $result);
         }
 
-        // function test_anagramCheck_repeated()
-        // {
-        //     //Arrange
-        //     $test_AnagramChecker = new AnagramChecker;
-        //     $input = "delight, lighted";
-        //
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($input);
-        //
-        //     //Assert
-        //     $this->assertEquals(true, $result);
-        // }
+        function test_anagramChecker_Anagram()
+        {
+            //Arrange
+            $source_text = "delight";
+            $anagram_text = "lighted";
+            $test_AnagramChecker = new AnagramChecker($source_text, $anagram_text);
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($source_text, $anagram_text);
+
+            //Assert
+            $this->assertEquals(true, $result);
+        }
+
+
 
     }
 

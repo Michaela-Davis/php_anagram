@@ -37,8 +37,17 @@
 
         function checkAnagram()
         {
-            if ($this->source_text == $this->anagram_text) {
+            // Arrange
+            $source_array = str_split($this->source_text);
+            $anagram_array = str_split($this->anagram_text);
+            sort($source_array);
+            sort($anagram_array);
+
+            // Act
+            if ($source_array == $anagram_array) {
                 return true;
+            } else {
+                return false;
             }
 
         }
