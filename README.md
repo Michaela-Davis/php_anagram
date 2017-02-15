@@ -22,10 +22,10 @@ _An anagram is a word that you can rearrange the letters and it becomes a new wo
 
 |    *Behavior*   |    *Input*    |     *Output*    |
 |-----------------|---------------|-----------------|
-| It recognizes a word that has no anagrams  | "ham", "mat" | “This words do not have the same characters and therefore are not anagrams"|
-| It recognizes two words that are the same  | "ham", "ham" | “These are the same word. Please try again."|  
-| It recognizes a words that are anagrams of each other  | "delight", "lighted" | “This word has 1 anagram: lighted"|
-| It recognizes a word that has multiple anagrams  | "friend", "finder, redfin, refind" | “This word has 3 anagrams: finder, redfin, refind"|
+| It recognizes a word that has no anagrams  | "ham", "mat" | false, “This words do not have the same characters and therefore are not anagrams"|
+| It recognizes two words that are the same  | "ham", "ham" | false, “These are the same word. Please try again."|  
+| It recognizes a words that are anagrams of each other  | "delight", "lighted" | true, “This word has 1 anagram: lighted"|
+| It recognizes a word that has multiple anagrams  | "friend", "finder, redfin, refind" | true, “This word has 3 anagrams: finder, redfin, refind"|
 
 
 ## Known Bugs

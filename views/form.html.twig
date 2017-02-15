@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
+    <title>Check Anagram!</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>Anagram Checker</h1>
+        <p>Enter the words you would like to check for anagram matches:</p>
+        <form action='/view_anagram_checked'>
+            <div class='form-group'>
+              <label for='source_text'>Source Text:</label>
+              <input id='source_text' name='source_text' class='form-control' type='text'>
+            </div>
+            <div class='form-group'>
+              <label for='anagram_text'>Anagram Text:</label>
+              <input id='anagram_text' name='anagram_text' class='form-control' type='text'>
+            </div>
+            <button type='submit' class='btn-success'>Anagram Check</button>
+        </form>
+    </div>
+</body>
+</html>
